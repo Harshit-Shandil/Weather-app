@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
-      <center><h1>Weather App</h1></center>
+      <center> <marquee behavior="alternate"><h1 className='head'>Weather App</h1></marquee> </center>
       <main>
         <div className="search-box">
           <input 
@@ -54,7 +54,9 @@ function App() {
           </div>
           <div className="weather-box">
             <div className="temp">
-              {Math.round(weather.main.temp)}°c
+              <p>Temperature: {Math.round(weather.main.temp)}°c</p>
+              {'\n'}
+             <p>Humidity: {Math.round (weather.main.humidity)}%</p> 
             </div>
             <div className="weather">{weather.weather[0].main}</div>
           </div>
@@ -64,5 +66,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
