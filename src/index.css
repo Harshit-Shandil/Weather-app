@@ -87,7 +87,7 @@ main {
   padding: 15px 25px;
 
   color: #FFF;
-  font-size: 102px;
+  font-size: 60px;
   font-weight: 900;
 
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
@@ -100,4 +100,10 @@ main {
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.head
+{
+  color: rgb(88, 33, 33);
+  
 }
